@@ -1,9 +1,10 @@
-using namespace std;
 #include <bits/stdc++.h>
+using namespace std;
+#include "leetcode.h"
 #include "solution.cpp"
 
-int main(int argc, char const *argv[])
+int main(int argc, const char *argv[])
 {
-	Solution().main();
+	Solution().main(argc, argv);
 	return 0;
 }

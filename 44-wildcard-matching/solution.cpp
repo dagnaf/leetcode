@@ -20,7 +20,7 @@ public:
         return dp[s.size()][p.size()];
     }
 
-    void main() {
+    int main(int argc, const char *argv[]) {
         string s, p;
         while (cin >> s >> p) isMatch(s, p);
     }

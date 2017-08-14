@@ -1,5 +1,6 @@
 *.o
 main
-main.exe
+main.exe*
 test/*
 Makefile.bak
+case.txt
