@@ -62,7 +62,7 @@ function main()
 
     # write default solution code solution.cpp, 4-space indent by default
     indent="    "
-    echo -ne "${code}" | sed "/^};$/ i\\\n${indent}int main(int argc, const char *argv[]) {\n${indent}${indent}\n${indent}}" > "${problem_name}/solution.cpp"
+    echo -ne "${code}" | sed "/^};$/ i\\\n${indent}int main(int argc, const char *argv[]) {\n${indent}${indent}return 0;\n${indent}}" > "${problem_name}/solution.cpp"
 
     # always make new problem
     export problem_name

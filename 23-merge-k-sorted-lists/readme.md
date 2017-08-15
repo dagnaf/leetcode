@@ -1,7 +1,5 @@
 # Merge k Sorted Lists
 
------------------------------------------
-
 ## Description
 
 ```
@@ -12,7 +10,7 @@ link: https://leetcode.com/problems/merge-k-sorted-lists/description/
 
 difficulty: Hard
 
-## Discuss
+## Discussion
 
 ```
 归并排序，每个链表设置一个指针。每次选取一个指针加入输出结果，选取过程由优先队列维护。

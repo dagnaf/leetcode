@@ -1,7 +1,5 @@
 # Wildcard Matching
 
------------------------------------------
-
 ## Description
 
 ```
@@ -30,7 +28,7 @@ link: https://leetcode.com/problems/wildcard-matching/description/
 
 difficulty: Hard
 
-## Discuss
+## Discussion
 
 ```
 s 文本串

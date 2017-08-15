@@ -1,7 +1,5 @@
 # LeetCode solutions
 
---------------------------------
-
 This repository contains C++ solutions to the leetcode.com's (algorithm) problems .
 
 ## Usage
