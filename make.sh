@@ -18,11 +18,11 @@ function main()
     else
         problem_name="${1%/}" # remove tailing /
         if [ "${problem_name}" == "" ]; then
-            problem_name=30-substring-with-concatenation-of-all-words
+            problem_name=32-longest-valid-parentheses
         elif [ "${problem_name}" != "$(tail -n 4 $0 | awk -F'=' '{print $2}' | awk -F'#' '{print $1}')" ]; then
             # make clean
             do_make clean
-        fi 
+        fi
         if [ ! -d "${problem_name}" ]; then
             echo "warn: problem \"${problem_name}\" not exists"
             exit 1
@@ -30,7 +30,7 @@ function main()
         # make problem_name=${problem_name}
         do_make
     fi
-    sed -i "s#problem_name=30-substring-with-concatenation-of-all-words#problem_name=${problem_name}#" $0    
+    sed -i "s#problem_name=32-longest-valid-parentheses#problem_name=${problem_name}#" $0
 }
 
 main $1

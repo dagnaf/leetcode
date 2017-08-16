@@ -10,7 +10,7 @@
 class Solution {
 private:
     enum order { ASC, DESC };
-    
+
     int get_order(vector<ListNode*>& lists) {
         int ord = ASC;
         for (ListNode *&ph : lists) {
