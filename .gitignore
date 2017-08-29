@@ -4,3 +4,4 @@ main.exe*
 test/*
 Makefile.bak
 case.txt
+gen_case*
