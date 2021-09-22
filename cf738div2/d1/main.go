@@ -70,9 +70,6 @@ func same(f []int, i, j int) bool {
 }
 
 func do(n int, e1, e2 []edge) []edge {
-	if len(e1) > len(e2) {
-		e1, e2 = e2, e1
-	}
 	f1 := newInitF(n, e1)
 	f2 := newInitF(n, e2)
 	var r []edge
