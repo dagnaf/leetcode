@@ -42,3 +42,25 @@ func Test_run(t *testing.T) {
 		})
 	}
 }
+
+func run(cmd []string, arg [][]int) []interface{} {
+	c := MajorityChecker{}
+	got := make([]interface{}, len(cmd))
+	for i := range cmd {
+		switch cmd[i] {
+		case "MajorityChecker":
+			c = Constructor(arg[i])
+		case "query":
+			got[i] = float64(c.Query(arg[i][0], arg[i][1], arg[i][2]))
+		}
+	}
+	return got
+}
+
+/*
+给定数组，在线查询区间中是否存在大于区间半数频数的数
+可持久化线段树、主席树
+数组前缀0-i建立线段树，维护频数直方图
+查询l-r的频数即两颗树相减
+查询频数大于半数，只需要查询一侧子树
+*/
